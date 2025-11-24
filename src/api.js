@@ -3,7 +3,7 @@ import { headers, get_payload_like, get_payload_info } from "./utils.js";
 import createWebmssdk from "./webmssdk.js";
 
 class API_TIKTOK {
-  constructor({ cookie = "" }) {
+  constructor(cookie="") {
     this.user_info = null;
     this.headers = headers;
     this.headers["cookie"] = cookie;

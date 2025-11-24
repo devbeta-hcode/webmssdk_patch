@@ -4,7 +4,7 @@ import fs from "fs"
 (async () => {
   const cookie = fs.readFileSync("cookie.txt").toString();
 
-  const api = new API_TIKTOK({ cookie });
+  const api = new API_TIKTOK(cookie);
   const userInfo = await api.get_user_info();
 
   // console.log(api.user_info);
